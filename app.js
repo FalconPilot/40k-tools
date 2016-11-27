@@ -52,10 +52,10 @@ function switchOptions() {
   let options = document.getElementById('options');
   if (options.style.maxHeight) {
     options.style.maxHeight = null;
-    button.innerHTML = "▲";
-  } else {
-    options.style.maxHeight = "0";
     button.innerHTML = "▼";
+  } else {
+    options.style.maxHeight = "100vh";
+    button.innerHTML = "▲";
   }
 }
 
