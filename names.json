@@ -1,6 +1,7 @@
 {
   "standard": {
     "title": "Standard names",
+    "color": "#6496C8",
     "prenoms": {
       "male": [
         "Achille",
@@ -100,10 +101,10 @@
       "Java",
       "Junius",
       "Khan",
+      "Mandrake",
       "Marcellus",
       "Margarita",
       "McMiller",
-      "Modrak",
       "Monroe",
       "Moreau",
       "Nausicaa",

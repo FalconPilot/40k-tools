@@ -24,13 +24,15 @@ body {
 }
 
 header {
+  position: relative;
   width: 100%;
-  min-height: 20vh;
+  min-height: 15vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0px 0px 4px #151515;
+  background-color: #555;
+  box-shadow: 0px 0px 4px #333;
+  z-index: 5;
 }
 
 main {
@@ -41,6 +43,10 @@ main {
   justify-content: flex-start;
   flex-direction: column;
   flex-wrap: wrap;
+  background-image: url("/images/40k/aquila_gold.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #main-container {
@@ -80,7 +86,7 @@ main {
 
 .top-main {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #555;
   max-height: 0;
   display: flex;
   align-items: center;
@@ -97,7 +103,7 @@ main {
 #options-button {
   width: 150px;
   padding: 5px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #555;
   border-radius: 0 0 10px 10px;
   text-align: center;
   user-select: none;
@@ -116,8 +122,8 @@ main {
   width: 120px;
   padding: 6px;
   font-size: 15px;
-  background-color: transparent;
-  color: rgb(var(--blue));
+  color: var(--bg);
+  background-color: rgb(var(--blue));
   border: 2px solid rgb(var(--blue));
   border-radius: 10px;
   outline: none;
@@ -128,8 +134,8 @@ main {
 
 .btn:hover {
   cursor: pointer;
-  background-color: rgb(var(--blue));
-  color: var(--bg);
+  color: rgb(var(--blue));
+  background-color: transparent;
 }
 
 /*
