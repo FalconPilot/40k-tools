@@ -23,6 +23,15 @@ body {
   flex-direction: column;
 }
 
+header {
+  width: 100%;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 main {
   width: 100%;
   flex: 1;
@@ -44,6 +53,9 @@ main {
 #name_result {
   width: 100%;
   text-align: center;
+  font-size: 45px;
+  font-style: italic;
+  text-shadow: 0px 0px 3px #333;
 }
 
 /*
@@ -61,6 +73,8 @@ main {
   border-radius: 10px;
   outline: none;
   transition: 0.2s;
+  font-family: 'Josefin Sans';
+  font-weight: bold;
 }
 
 .btn:hover {

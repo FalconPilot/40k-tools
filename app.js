@@ -23,13 +23,17 @@ document.addEventListener("DOMContentLoaded", function() {
         wrapper.className = "gen-item";
 
         let head = document.createElement("div");
-        head.innerHTML = "Generate name : " + namejson[keys[i]]["title"];
+        head.innerHTML = "Module : " + namejson[keys[i]]["title"];
         head.className = "cattitle";
 
         wrapper.appendChild(head);
         genButton("Male", keys[i] + "$male", wrapper);
         genButton("Female", keys[i] + "$female", wrapper);
         container.appendChild(wrapper);
+        if (i < keys.length - 1) {
+          let br = document.createElement("hr");
+          container.appendChild(br);
+        }
       }
     }
   });
