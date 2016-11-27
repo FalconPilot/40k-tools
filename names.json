@@ -1,0 +1,65 @@
+{
+  "standard": {
+    "title": "Noms standards",
+    "prenoms": {
+      "male": [
+        "Alain",
+        "Alan",
+        "Alexander",
+        "Alexis",
+        "Alfred",
+        "Armand",
+        "Basilio",
+        "Caius",
+        "Claudius",
+        "Dominique",
+        "Felix",
+        "Hector",
+        "Hugo",
+        "Ignatius",
+        "Julius",
+        "Marcus",
+        "Marius",
+        "Ralph",
+        "Sergei",
+        "Vasili"
+      ],
+      "female": [
+        "Acogna",
+        "Agatha",
+        "Agnes",
+        "Alexandra",
+        "Alexia",
+        "Amalia",
+        "Aurora",
+        "Carole",
+        "Celine",
+        "Clara",
+        "Emilie",
+        "Judith",
+        "Megan",
+        "Natascha"
+      ]
+    },
+    "noms": [
+      "Bael",
+      "Brutus",
+      "Callahan",
+      "Dorn",
+      "Finley",
+      "Hellvicta",
+      "Java",
+      "Khan",
+      "Marcellus",
+      "McMiller",
+      "Modrak",
+      "Oppius",
+      "Porcus",
+      "Python",
+      "Scipio",
+      "Silius",
+      "Sturm",
+      "Tullius"
+    ]
+  }
+}

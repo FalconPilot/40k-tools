@@ -1,0 +1,28 @@
+/*
+**  CSS Variables
+*/
+
+:root {
+
+}
+
+/*
+**  Standard
+*/
+
+body {
+  margin: 0;
+  background-color: #333;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.maintitle {
+  width: 100%;
+
+}
