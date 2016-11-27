@@ -30,13 +30,11 @@
         "Leo",
         "Lucas",
         "Marcus",
+        "Marek",
         "Marius",
-        "Nikolai",
         "Ralph",
         "Scott",
-        "Sergei",
         "Thomas",
-        "Vassili",
         "Victor",
         "Xavier"
       ],
@@ -65,10 +63,9 @@
         "Julia",
         "Laetitia",
         "Lyna",
+        "Malik",
         "Maria",
         "Megan",
-        "Natascha",
-        "Nikita",
         "Noemia",
         "Olivia",
         "Priscilla",
@@ -99,7 +96,6 @@
       "Horacio",
       "Java",
       "Junius",
-      "Kaliayev",
       "Khan",
       "Marcellus",
       "Margarita",
@@ -120,6 +116,44 @@
       "Turing",
       "Umbrella",
       "Valerius"
+    ]
+  },
+  "slavic": {
+    "title": "Slavic names",
+    "prenoms": {
+      "male": [
+        "Alexei",
+        "Dimitri",
+        "Konstantin",
+        "Nikolai",
+        "Sergei",
+        "Vassili",
+        "Vladimir"
+      ],
+      "female": [
+        "Anastasia",
+        "Anna",
+        "Anya",
+        "Irina",
+        "Irma",
+        "Natascha",
+        "Nikita",
+        "Oksana",
+        "Olga",
+        "Sonia",
+        "Vera"
+      ]
+    },
+    "noms": [
+      "Ivanov",
+      "Kaliayev",
+      "Makarov",
+      "Medvedev",
+      "Melnikov",
+      "Nazarov",
+      "Nikonov",
+      "Pavlov",
+      "Voïnov"
     ]
   }
 }

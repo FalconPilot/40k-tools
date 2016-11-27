@@ -52,6 +52,11 @@ main {
   flex-direction: column;
 }
 
+#main-container > hr {
+  width: 50%;
+  opacity: 0.8;
+}
+
 .cattitle {
   width: 100%;
   font-variant: small-caps;
