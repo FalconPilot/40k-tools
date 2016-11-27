@@ -9,6 +9,10 @@ let namejson
 */
 
 document.addEventListener("DOMContentLoaded", function() {
+  let options_button = document.getElementById('options-button');
+  options_button.addEventListener("click", function() {
+    switchOptions();
+  });
   $.ajax({
     url: "names.json",
     type: "GET",
@@ -40,6 +44,22 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 /*
+**  Switch Options
+*/
+
+function switchOptions() {
+  let button = document.getElementById('options-button');
+  let options = document.getElementById('options');
+  if (options.style.maxHeight) {
+    options.style.maxHeight = null;
+    button.innerHTML = "▲";
+  } else {
+    options.style.maxHeight = "0";
+    button.innerHTML = "▼";
+  }
+}
+
+/*
 **  Create button
 */
 
@@ -64,13 +84,31 @@ function nameGen(nmod) {
   let cat = nmod.split('$')[0];
   let gender = nmod.split('$')[1];
   let sublist = namejson[cat];
-  let plist = sublist["prenoms"][gender];
-  let pseed = randInt(0, plist.length - 1);
-  let prenom = plist[pseed];
 
-  let nlist = sublist["noms"];
-  let nseed = randInt(0, nlist.length - 1);
-  let nom = nlist[nseed];
+  let plock = document.getElementById('plock');
+  let prenom
+  if (plock.checked) {
+    prenom = result.innerHTML.split(' ')[0];
+    console.log(prenom);
+  } else {
+    let plist = sublist["prenoms"][gender];
+    let pseed = randInt(0, plist.length - 1);
+    prenom = plist[pseed];
+    let change = document.getElementById('plock-text');
+    change.innerHTML = '\"' + prenom + '\"'
+  }
+
+  let nlock = document.getElementById('nlock');
+  let nom
+  if (nlock.checked) {
+    nom = result.innerHTML.split(' ')[1];
+  } else {
+    let nlist = sublist["noms"];
+    let nseed = randInt(0, nlist.length - 1);
+    nom = nlist[nseed];
+    let change = document.getElementById('nlock-text');
+    change.innerHTML = '\"' + nom + '\"';
+  }
 
   result.innerHTML = prenom + " " + nom;
 }

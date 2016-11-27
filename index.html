@@ -14,10 +14,24 @@
   <body>
     <!-- HEADER -->
     <header>
-      <div id="name_result">Hello, Inquisitor</div>
+      <div id="name_result">Hello Inquisitor</div>
     </header>
     <!-- MAIN CONTAINER -->
-    <main id="main-container">
+    <main>
+      <!-- OPTIONS -->
+      <div class="top-main" id="options">
+        <p>
+          Lock <span id="plock-text">"Hello"</span>
+          <input type="checkbox" id="plock">
+        </p>
+        <p>
+          Lock <span id="nlock-text">"Inquisitor"</span>
+          <input type="checkbox" id="nlock">
+        </p>
+      </div>
+      <!-- OPTIONS BUTTON -->
+      <div id="options-button">▲</div>
+      <div id="main-container"></div>
     </main>
     <!-- SCRIPTS -->
     <script src="/scripts/jquery.js"></script>

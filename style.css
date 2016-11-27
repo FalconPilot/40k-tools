@@ -30,6 +30,7 @@ header {
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 4px #151515;
 }
 
 main {
@@ -37,8 +38,18 @@ main {
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-direction: column;
   flex-wrap: wrap;
+}
+
+#main-container {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .cattitle {
@@ -56,6 +67,39 @@ main {
   font-size: 45px;
   font-style: italic;
   text-shadow: 0px 0px 3px #333;
+}
+
+/*
+**  Options
+*/
+
+.top-main {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  max-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.top-main > p {
+  margin: 5px 0;
+}
+
+#options-button {
+  width: 150px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+  user-select: none;
+}
+
+#options-button:hover {
+  cursor: pointer;
 }
 
 /*
