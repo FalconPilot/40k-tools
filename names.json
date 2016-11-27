@@ -1,6 +1,6 @@
 {
   "standard": {
-    "title": "Noms standards",
+    "title": "Standard names",
     "prenoms": {
       "male": [
         "Achille",
@@ -80,6 +80,7 @@
     },
     "noms": [
       "Ancona",
+      "Aqua",
       "Aurelius",
       "Auron",
       "Bael",
@@ -104,6 +105,7 @@
       "Modrak",
       "Monroe",
       "Moreau",
+      "Nausicaa",
       "Oppius",
       "Ouranos",
       "Porcus",
