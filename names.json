@@ -3,6 +3,7 @@
     "title": "Noms standards",
     "prenoms": {
       "male": [
+        "Achille",
         "Alain",
         "Alan",
         "Alexander",
@@ -15,9 +16,13 @@
         "Dominique",
         "Felix",
         "Hector",
+        "Hippolite",
         "Hugo",
         "Ignatius",
+        "Isaac",
         "Julius",
+        "Leo",
+        "Lucas",
         "Marcus",
         "Marius",
         "Ralph",
@@ -32,22 +37,35 @@
         "Alexia",
         "Amalia",
         "Aurora",
+        "Axelle",
         "Carole",
         "Celine",
         "Clara",
         "Emilie",
+        "Isabelle",
         "Judith",
+        "Julia",
+        "Laetitia",
+        "Maria",
         "Megan",
-        "Natascha"
+        "Natascha",
+        "Noemia",
+        "Olivia",
+        "Priscilla",
+        "Regina",
+        "Rosa"
       ]
     },
     "noms": [
+      "Aurelius",
       "Bael",
       "Brutus",
       "Callahan",
       "Dorn",
+      "Fabius",
       "Finley",
       "Hellvicta",
+      "Horacio",
       "Java",
       "Khan",
       "Marcellus",
@@ -56,10 +74,14 @@
       "Oppius",
       "Porcus",
       "Python",
+      "Roscoe",
       "Scipio",
       "Silius",
       "Sturm",
-      "Tullius"
+      "Tullius",
+      "Turing",
+      "Valerius",
+      "Zarkov"
     ]
   }
 }

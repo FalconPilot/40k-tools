@@ -3,7 +3,8 @@
 */
 
 :root {
-
+  --blue: 100, 150, 200;
+  --bg: #333;
 }
 
 /*
@@ -11,18 +12,71 @@
 */
 
 body {
+  font-family: "Josefin Sans";
   margin: 0;
-  background-color: #333;
+  color: #FFF;
+  background-color: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 main {
+  width: 100%;
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.maintitle {
+.cattitle {
   width: 100%;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 15px;
+  text-shadow: 0px 0px 3px #151515;
+  text-align: center;
+}
 
+#name_result {
+  width: 100%;
+  text-align: center;
+}
+
+/*
+**  Generator button
+*/
+
+.btn {
+  margin: 5px 20px;
+  width: 120px;
+  padding: 6px;
+  font-size: 15px;
+  background-color: transparent;
+  color: rgb(var(--blue));
+  border: 2px solid rgb(var(--blue));
+  border-radius: 10px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(var(--blue));
+  color: var(--bg);
+}
+
+/*
+**  Generator item wrapper
+*/
+
+.gen-item {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
