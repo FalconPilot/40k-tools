@@ -16,9 +16,11 @@
         "Cornelius",
         "Dante",
         "Dominique",
+        "Edgar",
         "Eric",
         "Ezekiel",
         "Felix",
+        "Gerard",
         "Hector",
         "Hippolite",
         "Horacio",
@@ -27,6 +29,7 @@
         "Isaac",
         "Javier",
         "José",
+        "Joseph",
         "Juan",
         "Julius",
         "Leo",
@@ -34,6 +37,7 @@
         "Marcus",
         "Marek",
         "Marius",
+        "Michael",
         "Ralph",
         "Scott",
         "Thomas",
@@ -75,6 +79,7 @@
         "Regina",
         "Rosa",
         "Sarah",
+        "Savannah",
         "Sophia",
         "Teresa",
         "Victoria"
@@ -125,9 +130,13 @@
     "prenoms": {
       "male": [
         "Alexei",
+        "Boris",
         "Dimitri",
+        "Igor",
+        "Ivan",
         "Konstantin",
         "Nikolai",
+        "Piotr",
         "Sergei",
         "Vassili",
         "Vladimir"
@@ -147,8 +156,10 @@
       ]
     },
     "noms": [
+      "Alenko",
       "Ivanov",
       "Kaliayev",
+      "Malkovich",
       "Makarov",
       "Medvedev",
       "Melnikov",
