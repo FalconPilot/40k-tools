@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <!-- HEAD -->
+  <head>
+    <title>40k Bounty Hunter</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="icon" type="image/png" href="/images/40k/favicon.png">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <!-- META -->
+    <meta charset="utf-8">
+  </head>
+  <!-- BODY -->
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1 class="maintitle">Bounty Hunter Pal</h1>
+    </header>
+    <!-- MAIN -->
+    <main>
+      <!-- EXECUTE BUTTON -->
+      <button id="exe-btn" class="btn">Execute contract</button>
+      <!-- RESULTS -->
+      <div class="col-block large">
+        <!-- SUCCESS -->
+        <div class="param-block single">
+          <p>Contract status</p>
+          <div id="result">Pending</div>
+          <div id="result_roll">-</div>
+        </div>
+        <div class="degrees" id="result_degrees">-</div>
+        <!-- RISKS -->
+        <div class="param-block single">
+          <p>Contract risks</p>
+          <div id="risk">Pending</div>
+          <div id="risk_roll">-</div>
+        </div>
+        <div class="degrees" id="risk_degrees">-</div>
+      </div>
+      <!-- NOTIFICATIONS -->
+      <div class="notif-wrapper">
+        <!-- CONTRACT FAILED -->
+        <div id="result_notif">
+          <span class="pass">
+            Contract has been passed successfully. With 2 success degrees or more,
+            the bounty hunter can chose to keep the target alive. On a mission with
+            30 base difficulty or less, only 1 success degree is required to
+            keep the target alive.
+          </span>
+          <span class="fail">
+            Warning ! Contract has failed. For each failure degree, consider the
+            employer even more disappointed and angry at the failure. With 3 failure
+            degrees or more, the wrong target might even have been killed by mistake.
+          </span>
+        </div>
+        <div id="risk_notif">
+          <span class="pass">
+            Contract is safe. There should be no consequences on the bounty hunter whatsoever,
+            who managed to get out without even being seen by anyone and
+            without leaving evidence behind.
+          </span>
+          <span class="fail">
+            Warning ! Contract is unsafe. For each failure degree,
+            consider bigger consequences for the bounty hunter, whether the contract
+            has been successfully completed or not. With 3 failure degrees or more,
+            the bounty hunter's identity can be compromised by an external person.
+          </span>
+        </div>
+      </div>
+      <div class="infos-input">
+        <!-- CONTRACT -->
+        <div class="col-block">
+          <h1 class="blocktitle">Contract data</h1>
+          <!-- DIFFICULTY -->
+          <div class="param-block">
+            <p>Difficulty (1-100)</p>
+            <input type="text" id="difficulty$100">
+          </div>
+          <!-- RISK -->
+          <div class="param-block">
+            <p>Risk (1-100)</p>
+            <input type="text" id="risk$100">
+          </div>
+          <!-- DURATION -->
+          <div class="param-block large">
+            <p>Duration (1-30)</p>
+            <input type="text" id="duration$30">
+          </div>
+        </div>
+        <!-- HUNTER -->
+        <div class="col-block">
+          <h1 class="blocktitle">Bounty hunter data</h1>
+          <!-- CC -->
+          <div class="param-block">
+            <p>Combat Skill (1-100)</p>
+            <input type="text" id="cc$100">
+          </div>
+          <!-- CT -->
+          <div class="param-block">
+            <p>Ballistic Skill (1-100)</p>
+            <input type="text" id="ct$100">
+          </div>
+          <!-- AGI -->
+          <div class="param-block">
+            <p>Agility (1-100)</p>
+            <input type="text" id="agi$100">
+          </div>
+          <!-- SOC -->
+          <div class="param-block">
+            <p>Fellowship (1-100)</p>
+            <input type="text" id="soc$100">
+          </div>
+        </div>
+      </div>
+      <!-- PRONOSTICS -->
+      <div class="col-block large">
+        <h1 class="blocktitle">Contract estimations</h1>
+        <!-- VALUE -->
+        <div class="param-block large">
+          <p>Recommended bounty</p>
+          <div id="cvalue">0 T</div>
+        </div>
+        <!-- DIFFICULTY -->
+        <div class="param-block">
+          <p>Final difficulty</p>
+          <div id="dvalue">1</div>
+        </div>
+        <!-- RISK -->
+        <div class="param-block">
+          <p>Final risks</p>
+          <div id="rvalue">1</div>
+        </div>
+      </div>
+    </main>
+    <!-- SCRIPTS -->
+    <script src="/scripts/jquery.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

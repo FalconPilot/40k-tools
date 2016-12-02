@@ -1,0 +1,248 @@
+/*
+**  CSS Variables
+*/
+
+:root {
+  --bg-color: #333;
+  --blue: rgb(100, 150, 200);
+  --red: rgb(200, 100, 80);
+  --green: rgb(100, 200, 80);
+}
+
+/*
+**  Standard
+*/
+
+body {
+  margin: 0;
+  color: #FFF;
+  font-family: "Josefin Sans";
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  min-height: 10vh;
+  background-color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  min-height: 90vh;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+main > hr {
+  width: 80%;
+  height: 2px;
+  border: none;
+  background-color: #CCC;
+  border-radius: 2px;
+}
+
+/*
+**  Document titles
+*/
+
+.maintitle {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  font-size: 35px;
+  text-shadow: 0px 0px 3px #333;
+}
+
+.blocktitle {
+  width: 100%;
+  margin: 0;
+  padding: 5px 2px;
+  font-size: 18px;
+  text-align: center;
+  align-self: flex-start;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*
+**  Notifications
+*/
+
+.notif-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.notif-wrapper > div {
+  display: none;
+  width: 50%;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px #633;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.notif-wrapper > .failed {
+  background-color: var(--red);
+}
+
+.notif-wrapper > .success {
+  background-color: var(--green);
+}
+
+.notif-wrapper > div > span {
+  display: none;
+}
+
+.success > .pass, .failed > .fail {
+  display: inline;
+}
+
+/*
+**  Buttons
+*/
+
+.btn {
+  width: 200px;
+  padding: 5px;
+  margin: 5px 0;
+  outline: none;
+  background-color: transparent;
+  font-family: "Josefin Sans";
+  color: var(--blue);
+  font-weight: bold;
+  font-size: 16px;
+  border: 2px solid var(--blue);
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--blue);
+  color: var(--bg-color);
+}
+
+/*
+**  Element blocks
+*/
+
+.infos-input {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.col-block {
+  width: 42%;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #555;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.col-block.large {
+  width: 85%;
+}
+
+/*
+**  Parameter block
+*/
+
+.param-block {
+  margin: 5px;
+  width: 45%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.param-block.single {
+  width: 25%;
+  align-self: stretch;
+}
+
+.param-block.large {
+  width: 90%;
+}
+
+.param-block > p {
+  margin: 2px 0;
+  font-size: 15px;
+  text-shadow: 0px 0px 3px #333;
+}
+
+.param-block > div {
+  width: 200px;
+  padding: 5px 2px;
+  margin: 5px 0;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #AAA;
+  box-shadow: 0px 0px 3px #333 inset;
+  color: var(--bg-color);
+  border-radius: 15px;
+  border: 1px solid #333;
+  text-align: center;
+}
+
+.param-block > input {
+  width: 70px;
+  margin: 5px 0;
+  outline: none;
+  font-family: "Josefin Sans";
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 2px;
+  border-radius: 15px;
+  border: 1px solid #333;
+  color: #333;
+  text-align: center;
+}
+
+/*
+**  Success/Failure degrees
+*/
+
+.degrees {
+  height: 100px;
+  width: 100px;
+  margin: 5px 0;
+  border-radius: 50px;
+  border: 2px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0px 0px 3px #333;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.degrees.success {
+  background-color: var(--green);
+}
+
+.degrees.fail {
+  background-color: var(--red);
+}

@@ -1,0 +1,178 @@
+/*
+**  Standard
+*/
+
+body {
+  margin: 0;
+  background-color: #333;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  flex: 1;
+  display: flex;
+}
+
+/*
+**  Console display
+*/
+
+.console {
+  position: relative;
+  width: 100%;
+  margin: 15px;
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  font-family: "Monaco";
+  font-size: 12px;
+  color: green;
+  background-color: #111;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 1px #111;
+}
+
+#list {
+  max-height: 95vh;
+  overflow: auto;
+}
+
+#list div {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+/*
+**  Filesystem
+*/
+
+.sub-file {
+  margin-left: 15px;
+  transition: 0.2s;
+}
+
+.sub-file:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 1px green;
+}
+
+.sub-file:before {
+  content: "|_";
+  color: #FFF;
+}
+
+.sub-file.active {
+  color: #FFF;
+}
+
+.root-file {
+  transition: 0.2s;
+}
+
+.root-file:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 1px green;
+}
+
+.root-file:before {
+  content: "/";
+  color: yellow;
+}
+
+.parent-file.active > .root-file {
+  color: yellow;
+}
+
+.parent-file {
+  max-height: 16px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.parent-file.active {
+  max-height: 100vh;
+}
+
+/*
+**  Download button
+*/
+
+.download-btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-btn > p {
+  margin: 0;
+  transition: 0.2s;
+}
+
+.download-btn > p:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 2px #FFF;
+}
+
+/*
+**  Window formatting
+*/
+
+.content-wrapper {
+  position: relative;
+  flex: 1;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#content {
+  width: 80%;
+  padding: 20px;
+  margin-top: 60px;
+  max-height: 82vh;
+  overflow: auto;
+  box-sizing: border-box;
+  white-space: pre-line;
+  text-align: justify;
+}
+
+#content > h1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 40px;
+  font-size: 20px;
+  margin: 5px 0;
+  color: yellow;
+  text-align: center;
+  z-index: 15;
+}
+
+#content > h2 {
+  width: 100%;
+  font-size: 15px;
+  margin: 0;
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.list-puce {
+  color: #FFF;
+}
